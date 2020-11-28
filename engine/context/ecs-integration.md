@@ -44,21 +44,29 @@ To ensure that Docker ECS integration is allowed to manage resources for your Co
 have to ensure your AWS credentials grant access to following AWS IAM permissions:
 
 * cloudformation:*
-* ecs:ListAccountSettings
-* ecs:CreateCluster
-* ecs:CreateService
+* ecs:*
+* elasticfilesystem:*
+* elasticloadbalancing:*
+* application-autoscaling:*
+* servicediscovery:*
 * ec2:DescribeVpcs
 * ec2:DescribeSubnets
 * ec2:CreateSecurityGroup
 * ec2:DescribeSecurityGroups
 * ec2:DeleteSecurityGroup
+* ec2:AuthorizeSecurityGroupIngress
+* ec2:createTags
+* ec2:RevokeSecurityGroupIngress
 * iam:CreateRole
 * iam:AttachRolePolicy
 * iam:DetachRolePolicy
 * iam:DeleteRole
-* elasticloadbalancing:*
-* application-autoscaling:*
-* servicediscovery:*
+* iam:DeleteRolePolicy
+* iam:GetRolePolicy
+* iam:ListRoles
+* iam:PassRole
+* iam:PutRolePolicy
+* iam:TagRole
 * logs:CreateLogGroup
 * logs:DescribeLogGroups
 * logs:FilterLogEvents
