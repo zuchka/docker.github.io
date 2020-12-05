@@ -49,7 +49,7 @@ Now let's create your first repository, and push your bulletin board image to Do
 
 3.  You are now ready to share your image on Docker Hub, however, there's one thing you must do first: images must be *namespaced correctly* to share on Docker Hub. Specifically, you must name images like `<Your Docker ID>/<Repository Name>:<tag>`.
 
-    Make sure you’re in the `node-bulletin-board/bulletin-board-app` directory in a terminal or PowerShell then and run:
+    Make sure you’re in the `node-bulletin-board/bulletin-board-app` directory in a terminal or PowerShell and then run:
 
     ```shell
     docker tag bulletinboard:1.0 <Your Docker ID>/bulletinboard:1.0
